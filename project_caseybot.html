@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaseyBot - Project Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>CaseyBot - Salesforce AI Case Matcher</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="research.html">Research & Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <h2>CaseyBot - Salesforce AI Case Matcher</h2>
+            <p>
+                CaseyBot is an AI-powered chatbot integrated into Salesforce to match old cases with new ones, enabling faster and more efficient case resolution.
+            </p>
+
+            <h3>How It Was Built</h3>
+            <p>
+                The bot was built using Python to interface with the Salesforce API. Natural Language Processing (NLP) models were integrated to identify patterns in case descriptions and suggest relevant resolutions.
+            </p>
+
+            <h3>Languages and Tools</h3>
+            <ul>
+                <li>Python</li>
+                <li>Salesforce API</li>
+                <li>Natural Language Processing (NLP)</li>
+            </ul>
+
+            <h3>Project Demo</h3>
+            <video width="320" height="240" controls>
+                <source src="assets/project-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Code Explanation</h3>
+            <pre>
+                <code>
+# Example Python Code for CaseyBot
+import requests
+
+def fetch_case_data(case_id):
+    response = requests.get(f'https://salesforce.com/api/case/{case_id}')
+    return response.json()
+
+# Fetch case data and analyze with NLP
+case_data = fetch_case_data('12345')
+analyze_case(case_data)
+                </code>
+            </pre>
+
+            <a href="projects.html" class="back-button">Back to Projects</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Blen Begashaw. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
