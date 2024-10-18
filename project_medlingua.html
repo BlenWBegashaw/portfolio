@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedLingua - Project Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>MedLingua - AI Assisted Medical Scribe</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="research.html">Research & Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <h2>MedLingua - AI Assisted Medical Scribe</h2>
+            <p>
+                MedLingua is an AI-powered web application that assists doctors and patients by translating complex medical terminology into everyday language, improving communication and patient understanding.
+            </p>
+
+            <h3>How It Was Built</h3>
+            <p>
+                The app was developed using Python for the AI models and SvelteKit for the frontend. It uses natural language processing (NLP) to convert medical notes into simpler language that is easier to understand for patients.
+            </p>
+
+            <h3>Languages and Tools</h3>
+            <ul>
+                <li>Python</li>
+                <li>SvelteKit</li>
+                <li>NLP</li>
+            </ul>
+
+            <h3>Code Example</h3>
+            <pre>
+                <code>
+from transformers import pipeline
+
+# Load pre-trained model for medical text translation
+translator = pipeline("translation", model="facebook/wmt19-en-de")
+
+text = "The patient has a history of chronic bronchitis."
+result = translator(text)
+print(result)
+                </code>
+            </pre>
+
+            <a href="projects.html" class="back-button">Back to Projects</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Blen Begashaw. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
