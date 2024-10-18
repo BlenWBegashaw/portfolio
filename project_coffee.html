@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Recommender - Project Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Coffee Recommender - JavaScript Web App</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="research.html">Research & Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <h2>Coffee Recommender - Personalized Coffee Suggestions</h2>
+            <p>
+                This project is a JavaScript-based web application that recommends coffee types based on user preferences. The app uses a simple quiz format to gather user inputs and suggests a coffee type based on their answers.
+            </p>
+
+            <h3>How It Was Built</h3>
+            <p>
+                The Coffee Recommender was built using JavaScript for interactivity and HTML/CSS for the user interface. It uses conditional logic to determine the best coffee match based on user responses.
+            </p>
+
+            <h3>Languages and Tools</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+            </ul>
+
+            <h3>Code Example</h3>
+            <pre>
+                <code>
+function getCoffeeRecommendation(strength, milk, sweetness) {
+    if (strength === "strong" && milk === "none") {
+        return "Espresso";
+    } else if (strength === "medium" && sweetness === "yes") {
+        return "Latte";
+    }
+    return "Americano";
+}
+                </code>
+            </pre>
+
+            <a href="projects.html" class="back-button">Back to Projects</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Blen Begashaw. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
