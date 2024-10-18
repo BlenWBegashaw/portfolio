@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduOwl - Project Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>EduOwl - Admissions and Major Selection</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="research.html">Research & Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <h2>EduOwl - University Admissions and Major Selection Assistant</h2>
+            <p>
+                EduOwl is a web application designed to help students with university admissions and selecting the right major. It uses an AI-driven recommendation system to analyze student preferences and suggest suitable majors.
+            </p>
+
+            <h3>How It Was Built</h3>
+            <p>
+                The project was built using JavaScript for the front end and integrated with AI models to evaluate student interests and recommend relevant majors. Web scraping was used to gather admission information from various sources.
+            </p>
+
+            <h3>Languages and Tools</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>Web Scraping</li>
+                <li>AI Models</li>
+            </ul>
+
+            <h3>Code Example</h3>
+            <pre>
+                <code>
+fetch("https://university-api.com/admissions")
+    .then(response => response.json())
+    .then(data => {
+        // Process admission data and show on UI
+        displayAdmissionDetails(data);
+    });
+                </code>
+            </pre>
+
+            <a href="projects.html" class="back-button">Back to Projects</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Blen Begashaw. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
