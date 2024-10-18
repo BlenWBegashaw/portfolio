@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <h1>Blen Begashaw</h1>
             <nav>
@@ -15,7 +15,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="research.html">Research</a></li>
+                    <li><a href="research.html">Research & Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -23,16 +24,31 @@
 
     <section class="projects">
         <div class="container">
-            <h2>My Projects</h2>
-            <ul>
-                <li><a href="project1.html">Project 1: AI-driven anomaly detection in IoT</a></li>
-                <li><a href="project2.html">Project 2: Cybersecurity Threat Detection System</a></li>
-            </ul>
+            <h2>Projects</h2>
+            <div class="project-item">
+                <img src="assets/project1.png" alt="Project 1 Image">
+                <h3><a href="project1.html">SentiShelter - HackTechnica Winner</a></h3>
+                <p>Designed a machine learning-based solution using Python and LangFlow.</p>
+                <a href="project1.html" class="learn-more">Learn More</a>
+            </div>
+
+            <div class="project-item">
+                <video width="320" height="240" controls>
+                    <source src="assets/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3><a href="project2.html">MedLingua - AI-Powered Web App</a></h3>
+                <p>Engineered a web app to translate clinical notes into everyday language with 99% accuracy.</p>
+                <a href="project2.html" class="learn-more">Learn More</a>
+            </div>
         </div>
     </section>
 
     <footer>
         <p>© 2024 Blen Begashaw. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
